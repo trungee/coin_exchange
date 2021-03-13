@@ -1,0 +1,16 @@
+server:
+  port: 8086
+
+spring:
+  cloud.stream:
+    bindings:
+      priceAndProfit-out:
+        destination: priceAndProficChanged
+        content-type: application/json
+      kafka:
+        binder:
+          zkNodes: localhost
+          brokers: localhost:9094
+
+third-party:
+  host: https://api.coinbase.com/v2

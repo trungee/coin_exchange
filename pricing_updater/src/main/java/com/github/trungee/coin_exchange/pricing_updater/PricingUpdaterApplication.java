@@ -1,13 +1,13 @@
-package com.trungee.coinpricing;
+package com.github.trungee.coin_exchange.pricing_updater;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CoinpricingApplication {
+public class PricingUpdaterApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CoinpricingApplication.class, args);
+		SpringApplication.run(PricingUpdaterApplication.class, args);
 	}
 
 }
