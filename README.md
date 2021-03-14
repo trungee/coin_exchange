@@ -59,5 +59,5 @@ Curl commands:
 2. Get spot price for selling:
    ```bash
    curl --request GET \
-   --url http://localhost:8085/api/prices/BTC-NZD/buy?amount=1
+   --url http://localhost:8085/api/prices/BTC-NZD/sell?amount=1
    ```
