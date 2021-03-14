@@ -26,7 +26,8 @@ public class PricingController extends BaseController {
                 .sourceCurrency(sourceCurrency)
                 .targetCurrency(targetCurrent)
                 .amount(amount)
-                .build()).map(ResponseEntity::ok);
+                .build())
+                .map(ResponseEntity::ok);
     }
 
     @GetMapping("/{sourceCurrency}-{targetCurrency}/sell")
@@ -37,6 +38,7 @@ public class PricingController extends BaseController {
                 .sourceCurrency(sourceCurrency)
                 .targetCurrency(targetCurrent)
                 .amount(amount)
-                .build()).map(ResponseEntity::ok);
+                .build())
+                .map(ResponseEntity::ok);
     }
 }

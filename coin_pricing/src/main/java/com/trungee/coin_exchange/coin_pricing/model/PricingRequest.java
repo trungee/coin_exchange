@@ -5,6 +5,7 @@ import lombok.*;
 @Builder(access = AccessLevel.PUBLIC)
 @Getter
 @RequiredArgsConstructor(access = AccessLevel.PRIVATE)
+@EqualsAndHashCode
 public class PricingRequest {
 
     @NonNull
