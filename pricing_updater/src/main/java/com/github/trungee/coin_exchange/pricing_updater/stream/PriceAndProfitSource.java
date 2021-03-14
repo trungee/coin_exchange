@@ -4,5 +4,5 @@ import reactor.core.publisher.Mono;
 
 public interface PriceAndProfitSource {
 
-    Mono<Void> sendEvent(DataEvent<PricingPayload> dataEvent);
+    Mono<Boolean> sendEvent(DataEvent<PricingPayload> dataEvent);
 }

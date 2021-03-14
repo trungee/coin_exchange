@@ -4,5 +4,5 @@ import reactor.core.publisher.Mono;
 
 public interface PricingUpdaterService {
 
-    Mono<Void> update();
+    Mono<Boolean> update();
 }

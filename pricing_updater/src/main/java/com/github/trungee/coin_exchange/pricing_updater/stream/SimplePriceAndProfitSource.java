@@ -20,8 +20,8 @@ public class SimplePriceAndProfitSource implements PriceAndProfitSource {
     }
 
     @Override
-    public Mono<Void> sendEvent(DataEvent<PricingPayload> dataEvent) {
-        final Mono<Void> result;
+    public Mono<Boolean> sendEvent(DataEvent<PricingPayload> dataEvent) {
+        final Mono<Boolean> result;
         log.info("Sending event to queue: {} - data: {}", PRODUCER_BINDING_NAME, dataEvent);
         if (streamBridge.send(PRODUCER_BINDING_NAME, dataEvent)) {
             result = Mono.empty();
