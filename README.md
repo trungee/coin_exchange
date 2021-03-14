@@ -16,29 +16,35 @@ To build the code of Coin Exchange as a docker image, open a command-line window
 
 Run the following maven command
 
-   **mvn clean package docker:build**
+   ```bash
+   mvn clean package docker:build
+   ```
 
  Running the above command at the root of the project directory will build all of the projects.
 
 # Running the Kafka broker
 
 To start the docker image, issue the following docker-compose command
-   **docker-compose -f ./kafka-docker/docker-compose.yml -p coin_exchange up -d**
-   **docker-compose up**
 
+   ```bash
+   docker-compose -f ./kafka-docker/docker-compose.yml -p coin_exchange up -d
+   ```
 
 # Running the Pricing Updater service
 Open a command-line window and change to the directory coin_exchange/pricing_updater
 
 Run the following maven command
-  **mvn clean spring-boot:run**
+   ```bash
+   mvn clean spring-boot:run
+   ```
 
 # Running the Coin Pricing service
 Open a command-line window and change to the directory coin_exchange/coin_pricing
 
 Run the following maven command
-  **mvn clean spring-boot:run**
-
+   ```bash
+   mvn clean spring-boot:run
+   ```
 
 As of now, docker-compose for coin_pricing & pricing_update service is in-progress since I could not connect my services to Kafka broker from docker containers.
 
