@@ -53,7 +53,7 @@ Curl commands:
 1. Get spot price for buying:
    ```bash
    curl --request GET \
-   --url curl http://localhost:8085/api/prices/BTC-NZD/buy?amount=1
+   --url http://localhost:8085/api/prices/BTC-NZD/buy?amount=1
    ```
 
 2. Get spot price for selling:
