@@ -9,8 +9,8 @@ spring:
         content-type: application/json
       kafka:
         binder:
-          zkNodes: localhost
-          brokers: localhost:9094
+          zkNodes: 127.0.0.1
+          brokers: localhost:9092
 
 third-party:
   host: https://api.coinbase.com/v2

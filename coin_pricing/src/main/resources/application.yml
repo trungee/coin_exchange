@@ -10,4 +10,4 @@ spring:
       kafka:
         binder:
           zkNodes: localhost
-          brokers: localhost:9094
+          brokers: localhost:9092
